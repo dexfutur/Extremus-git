@@ -18,6 +18,11 @@ public class ActiveNarra : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Empieza narración");
+        Debug.Log("Here it is");
+        if(other.tag=="player")
+        {
+            Debug.Log("Empieza narración");
+        }
+       
     }
 }

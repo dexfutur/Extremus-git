@@ -11,7 +11,7 @@ public class player : MonoBehaviour
     {
         _move = GetComponent<playermove>();
         _rotate = GetComponent<playerrotate>();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Update()
