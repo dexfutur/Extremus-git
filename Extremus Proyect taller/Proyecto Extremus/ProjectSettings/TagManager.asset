@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Narracion
   - player
+  - a
   layers:
   - Default
   - TransparentFX

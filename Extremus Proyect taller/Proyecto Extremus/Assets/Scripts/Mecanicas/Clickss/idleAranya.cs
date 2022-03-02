@@ -5,6 +5,7 @@ using UnityEngine;
 public class idleAranya : MonoBehaviour
 {
     public Camera camera;
+    public Audio1 audio;
     /*private void OnMouseDown()
     {
        Debug.Log("La araña camina");
@@ -13,7 +14,11 @@ public class idleAranya : MonoBehaviour
 
    private void SpiderNarration()
     {
-        Debug.Log("Esta que ves aquí es la araña de las cuevas....");
+        if(audio.isYellin==false)
+        {
+            audio.PlaySpider();
+        }
+       
     }
      void Update()
     {
