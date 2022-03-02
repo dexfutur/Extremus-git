@@ -5,7 +5,7 @@ using UnityEngine;
 public class idleAranya : MonoBehaviour
 {
     public Camera camera;
-    public Audio1 audio;
+     Audio1 audio;
     /*private void OnMouseDown()
     {
        Debug.Log("La araña camina");
