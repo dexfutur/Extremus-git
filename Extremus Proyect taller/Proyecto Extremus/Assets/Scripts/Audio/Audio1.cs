@@ -7,11 +7,11 @@ using System;
 public class Audio1 : MonoBehaviour
 {
     // public Sounds[] sounds;
-    AudioSource myAudio;
+    public AudioSource myAudio;
     [SerializeField] AudioClip narrVol;
     [SerializeField] AudioClip narrSpider;
 
-    public bool isYellin=false;
+     public bool isYellin;
     void Update()
     {
         /*if(Input.GetKeyDown(KeyCode.C))

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ActiveNarra : MonoBehaviour
 {
-    Audio1 audio;
+    public Audio1 audio;
+    public bool isTalking;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +18,19 @@ public class ActiveNarra : MonoBehaviour
         
     }
 
+    public void VolcNarr()
+    {
+        isTalking = true;
+        Debug.Log("Empieza Narración");
+        audio.PlayVolcan();
+
+    }
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Here it is");
-        audio.PlayVolcan();
-        Debug.Log("Empieza narración");
 
+        VolcNarr();
+        isTalking = false;
         
     }
 }
