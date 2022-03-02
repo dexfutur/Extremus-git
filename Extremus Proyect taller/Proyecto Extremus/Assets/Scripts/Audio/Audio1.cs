@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveNarra : MonoBehaviour
+public class Audio1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,15 +13,6 @@ public class ActiveNarra : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Here it is");
-       
-        Debug.Log("Empieza narración");
-
         
     }
 }
