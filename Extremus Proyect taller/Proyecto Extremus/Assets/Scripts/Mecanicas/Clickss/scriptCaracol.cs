@@ -5,6 +5,7 @@ using UnityEngine;
 public class scriptCaracol : MonoBehaviour
 {
     public Camera camera;
+    public Audio1 audio;
     /*private void OnMouseDown()
     {
         Debug.Log("El caracol se muueeveee");
@@ -14,8 +15,17 @@ public class scriptCaracol : MonoBehaviour
     private void SnailNarration()
     {
         Debug.Log("Tiene un caparazón de sulfuro...");
+        audio.PlaySnail();
     }
     void Update()
+    {
+        if (!audio.myAudio.isPlaying)
+        {
+            Debug.Log("Paró narración");
+            ClickAction();
+        }
+    }
+    void ClickAction()
     {
         if (Input.GetMouseButtonDown(0))
         {

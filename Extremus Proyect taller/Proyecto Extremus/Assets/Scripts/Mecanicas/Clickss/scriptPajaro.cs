@@ -5,6 +5,7 @@ using UnityEngine;
 public class scriptPajaro : MonoBehaviour
 {
     public Camera camera;
+    public Audio1 audio;
    /* private void OnMouseDown()
     {
         Debug.Log("El pájaro camina/Aletea)");
@@ -14,9 +15,19 @@ public class scriptPajaro : MonoBehaviour
     private void BirdNarration()
     {
         Debug.Log("Este  párajo con grandes patas...");
+        audio.PlayBird();
     }
 
     void Update()
+    {
+        if (!audio.myAudio.isPlaying)
+        {
+            Debug.Log("Paró narración");
+            ClickAction();
+        }
+    }
+
+    void ClickAction()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -26,7 +37,7 @@ public class scriptPajaro : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.GetComponent<TargetP>() != null)
                 {
-                   Debug.Log("El pájaro camina/Aletea");
+                    Debug.Log("El pájaro camina/Aletea");
                     BirdNarration();
                 }
             }

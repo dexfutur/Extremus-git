@@ -8,9 +8,10 @@ public class GoToMain : MonoBehaviour
     [SerializeField] GameObject backToIsles;
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Here it is");
+        Debug.Log("aiuda");
         if (other.tag == "player")
         {
+            Debug.Log("ayuda");
             backToIsles.SetActive(true);
         }
 

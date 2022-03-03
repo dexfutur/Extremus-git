@@ -10,8 +10,10 @@ public class Audio1 : MonoBehaviour
     public AudioSource myAudio;
     [SerializeField] AudioClip narrVol;
     [SerializeField] AudioClip narrSpider;
+    [SerializeField] AudioClip narrBird;
+    [SerializeField] AudioClip narrSnail;
 
-     public bool isYellin;
+    public bool isYellin;
     void Update()
     {
         /*if(Input.GetKeyDown(KeyCode.C))
@@ -53,6 +55,14 @@ public class Audio1 : MonoBehaviour
     public void PlaySpider()
     {
         myAudio.PlayOneShot(narrSpider);
+    }
+    public void PlayBird()
+    {
+        myAudio.PlayOneShot(narrBird);
+    }
+    public void PlaySnail()
+    {
+        myAudio.PlayOneShot(narrSnail);
     }
     public void CheckSound()
     {

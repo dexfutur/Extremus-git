@@ -721,6 +721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 2131334287}
+  audio: {fileID: 1508173453}
 --- !u!114 &363532580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1336,7 +1337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038963662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 31}
+  m_LocalPosition: {x: 0, y: 6, z: 31}
   m_LocalScale: {x: 100.89116, y: 8.781119, z: 6.2802}
   m_Children: []
   m_Father: {fileID: 449954929}
@@ -1463,6 +1464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 2131334287}
+  audio: {fileID: 1508173453}
 --- !u!136 &1251280662
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1774,6 +1776,8 @@ MonoBehaviour:
   myAudio: {fileID: 1508173454}
   narrVol: {fileID: 8300000, guid: 3893ec0d546443f4ab4bd9d9d3320f31, type: 3}
   narrSpider: {fileID: 8300000, guid: 73eb23ea0fb19004188d8a3ab5e22436, type: 3}
+  narrBird: {fileID: 8300000, guid: 2df55358038edba4295e005e18bd5d81, type: 3}
+  narrSnail: {fileID: 8300000, guid: 23c810099b7ae3e4b9eac7932e645da9, type: 3}
   isYellin: 0
 --- !u!82 &1508173454
 AudioSource:
@@ -2178,7 +2182,7 @@ GameObject:
   - component: {fileID: 2134789478}
   m_Layer: 0
   m_Name: player
-  m_TagString: a
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
