@@ -2,30 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scriptCaracol : MonoBehaviour
+public class scriptBlobFish : MonoBehaviour
 {
     public Camera camera;
-    public Audio1 audio;
-    /*private void OnMouseDown()
-    {
-        Debug.Log("El caracol se muueeveee");
-        SnailNarration();
-    }*/
+    public ActiveNarrNuclear nar;
+    public AudioMarino audios;
+  
 
-    private void SnailNarration()
+    void Start()
     {
-        Debug.Log("Tiene un caparazón de sulfuro...");
-        audio.PlaySnail();
+
+    }
+    private void BlobNarration()
+    {
+        Debug.Log("Blob");
+        audios.PlayBlob();
     }
     void Update()
     {
-        if (!audio.myAudio.isPlaying)
+        if (!audios.myAudio.isPlaying)
         {
             Debug.Log("Paró narración");
             ClickAction();
         }
+
+
+
     }
-    void ClickAction()
+
+    public void ClickAction()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -33,10 +38,10 @@ public class scriptCaracol : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hitInfo))
             {
-                if (hitInfo.collider.gameObject.GetComponent<TargetC>() != null)
+                if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
                 {
-                    Debug.Log("El caracol se muueeveee");
-                    SnailNarration();
+                    Debug.Log("Blob caminaaa");
+                    BlobNarration();
                 }
             }
         }

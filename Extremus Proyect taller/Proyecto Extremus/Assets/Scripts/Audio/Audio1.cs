@@ -6,6 +6,7 @@ using System;
 
 public class Audio1 : MonoBehaviour
 {
+    //ESTE SCRIPT ES DEL VOLCÁN
     // public Sounds[] sounds;
     public AudioSource myAudio;
     [SerializeField] AudioClip narrVol;
