@@ -7,7 +7,6 @@ public class scriptAvispa : MonoBehaviour
     public Camera camera;
     public ActiveNarrNuclear nar;
     public AudioNucl audios;
-    Animator animator;
     // Audio1 audio;
     /*private void OnMouseDown()
     {
@@ -15,9 +14,9 @@ public class scriptAvispa : MonoBehaviour
         SpiderNarration();
     }*/
 
-    void Awake()
+    void Start()
     {
-        animator = gameObject.GetComponent<Animator>();
+
     }
     private void WaspNarration()
     {
@@ -47,7 +46,6 @@ public class scriptAvispa : MonoBehaviour
                 if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
                 {
                     Debug.Log("La araña camina");
-                    animator.SetBool("semueve", true);
                     WaspNarration();
                 }
             }
