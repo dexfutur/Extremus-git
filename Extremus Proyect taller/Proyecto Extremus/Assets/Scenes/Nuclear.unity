@@ -1893,9 +1893,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5cdb5467f02354baf369b60d8250b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  nar: {fileID: 0}
-  audios: {fileID: 0}
+  camera: {fileID: 963194227}
+  nar: {fileID: 2035215258}
+  audios: {fileID: 1989118967}
 --- !u!114 &1565305877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,9 +2215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e2daa2db65b984eb843f88a5f40ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  nar: {fileID: 0}
-  audios: {fileID: 0}
+  camera: {fileID: 963194227}
+  nar: {fileID: 2035215258}
+  audios: {fileID: 1989118967}
 --- !u!114 &1816315999
 MonoBehaviour:
   m_ObjectHideFlags: 0
