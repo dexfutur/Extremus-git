@@ -59,7 +59,7 @@ public class AudioNucl : MonoBehaviour
     {
         myAudio.PlayOneShot(narrRana);
     }
-    public void Playpuma()
+    public void PlayPuma()
     {
         myAudio.PlayOneShot(narrPuma);
     }
