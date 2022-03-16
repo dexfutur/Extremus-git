@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,11 +7,13 @@ public class scriptCangrejo : MonoBehaviour
     public Camera camera;
     public ActiveNarrNuclear nar;
     public AudioMarino audios;
+    Animator animator;
 
     void Start()
     {
-
+      animator = GetComponent<Animator>();
     }
+  
     private void CrabNarration()
     {
         Debug.Log("Cangrejo");
@@ -36,13 +38,21 @@ public class scriptCangrejo : MonoBehaviour
             //Ray goes through camera to position in the world the mouse points
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hitInfo))
-            {
+            {  
                 if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
                 {
-                    Debug.Log("Cangrejo camina");
+                    Debug.Log("el cangrejo camina");
+                    animator.SetBool("semueve", true);
                     CrabNarration();
                 }
+                
             }
         }
+
+        //Invoke("StopAnimation", 20);
     }
+
+            
+    
+    
 }

@@ -7,11 +7,12 @@ public class scriptBlobFish : MonoBehaviour
     public Camera camera;
     public ActiveNarrNuclear nar;
     public AudioMarino audios;
+    Animator animator;
   
 
     void Start()
     {
-
+        animator = gameObject.GetComponent<Animator>();
     }
     private void BlobNarration()
     {
@@ -41,6 +42,7 @@ public class scriptBlobFish : MonoBehaviour
                 if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
                 {
                     Debug.Log("Blob caminaaa");
+                    animator.SetBool("semueve", true);
                     BlobNarration();
                 }
             }
