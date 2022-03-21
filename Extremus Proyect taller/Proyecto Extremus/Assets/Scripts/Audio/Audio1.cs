@@ -13,6 +13,7 @@ public class Audio1 : MonoBehaviour
     [SerializeField] AudioClip narrSpider;
     [SerializeField] AudioClip narrBird;
     [SerializeField] AudioClip narrSnail;
+    [SerializeField] AudioClip narrTar;
 
     public bool isYellin;
     void Update()
@@ -47,7 +48,10 @@ public class Audio1 : MonoBehaviour
 
     // Update is called once per frame
     
-
+    public void PlayTar()
+    {
+        myAudio.PlayOneShot(narrTar);
+    }
     public void PlayVolcan()
     {
         myAudio.PlayOneShot(narrVol);

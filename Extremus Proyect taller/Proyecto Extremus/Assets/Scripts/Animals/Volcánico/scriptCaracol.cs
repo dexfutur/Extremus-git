@@ -6,6 +6,7 @@ public class scriptCaracol : MonoBehaviour
 {
     public Camera camera;
     public Audio1 audio;
+    public  ActiveNarra nar;
     /*private void OnMouseDown()
     {
         Debug.Log("El caracol se muueeveee");
