@@ -8,12 +8,7 @@ public class scriptAvispa : MonoBehaviour
     public ActiveNarrNuclear nar;
     public AudioNucl audios;
     Animator animator;
-    // Audio1 audio;
-    /*private void OnMouseDown()
-    {
-       Debug.Log("La araña camina");
-        SpiderNarration();
-    }*/
+ 
 
     void Awake()
     {

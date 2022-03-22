@@ -7095,7 +7095,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.31132078, g: 0.1806248, b: 0.20464481, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -57136,6 +57136,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7b738cf913ab04b865acdd5f525611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1565305879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565305873}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8630611, y: 1.7525167, z: 3.3334327}
+  m_Center: {x: 0.43153015, y: 0.3762583, z: -0.04710237}
 --- !u!1001 &1566893025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65574,6 +65587,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c58aa54db29beb429b83998b3346ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1816316001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816315995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.975836, y: 6.513499, z: 14.620138}
+  m_Center: {x: -2.9879172, y: 2.7567487, z: -3.8034787}
 --- !u!1001 &1826270136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70138,7 +70164,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: -0.08
   Loop: 0
   Mute: 0
   Spatialize: 0
