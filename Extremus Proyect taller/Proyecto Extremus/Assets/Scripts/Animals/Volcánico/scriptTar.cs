@@ -36,7 +36,7 @@ public class scriptTar : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hitInfo))
             {
-                if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
+                if (hitInfo.collider.gameObject.GetComponent<TargetC>() != null)
                 {
                     Debug.Log("Tar camina");
                     animator.SetBool("semueve", true);

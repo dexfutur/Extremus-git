@@ -5145,7 +5145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAudio: {fileID: 1508173454}
-  narrVol: {fileID: 8300000, guid: 3893ec0d546443f4ab4bd9d9d3320f31, type: 3}
+  narrVol: {fileID: 8300000, guid: 429748414b2c43449bd5b69e7ccb69b3, type: 3}
   narrSpider: {fileID: 8300000, guid: 73eb23ea0fb19004188d8a3ab5e22436, type: 3}
   narrBird: {fileID: 8300000, guid: 2df55358038edba4295e005e18bd5d81, type: 3}
   narrSnail: {fileID: 8300000, guid: 23c810099b7ae3e4b9eac7932e645da9, type: 3}
@@ -5163,7 +5163,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.965
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5295,17 +5295,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b634898746178cb43a9c6aef972999fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.32077
+      value: 70.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b634898746178cb43a9c6aef972999fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 54.35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b634898746178cb43a9c6aef972999fd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22
+      value: 5.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b634898746178cb43a9c6aef972999fd,
         type: 3}
@@ -5559,8 +5559,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.36075774, y: 0.20560656, z: 0.5433901}
-  m_Center: {x: 0.01150945, y: 0.09488378, z: 0.073816575}
+  m_Size: {x: 0.72888184, y: 0.80448973, z: 0.4741271}
+  m_Center: {x: -0.5488493, y: -0.09775513, z: -0.26293635}
 --- !u!23 &1621830991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5643,7 +5643,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621830989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7b738cf913ab04b865acdd5f525611, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c58aa54db29beb429b83998b3346ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1623990957
