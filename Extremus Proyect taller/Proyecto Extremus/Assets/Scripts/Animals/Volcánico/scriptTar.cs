@@ -2,38 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class idleAranya : MonoBehaviour
+public class scriptTar : MonoBehaviour
 {
     public Camera camera;
     public ActiveNarra nar;
     public Audio1 audios;
     Animator animator;
-    // Audio1 audio;
-    /*private void OnMouseDown()
-    {
-       Debug.Log("La araña camina");
-        SpiderNarration();
-    }*/
+ 
 
     void Start()
     {
         animator = GetComponent<Animator>();
     }
-    private void SpiderNarration()
+    private void TarNarr()
     {
-        Debug.Log("Esta es la araña delas islas Kuai");
-        audios.PlaySpider();
+        Debug.Log("Este es el tardigradito");
+        audios.PlayTar();
     }
-     void Update()
+    void Update()
     {
-        if(!audios.myAudio.isPlaying)
+        if (!audios.myAudio.isPlaying)
         {
             Debug.Log("Paró narración");
             ClickAction();
         }
-           
-        
-      
     }
 
     public void ClickAction()
@@ -46,12 +38,11 @@ public class idleAranya : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
                 {
-                    Debug.Log("La araña camina");
+                    Debug.Log("Tar camina");
                     animator.SetBool("semueve", true);
-                    SpiderNarration();
+                    TarNarr();
                 }
             }
         }
     }
 }
-
