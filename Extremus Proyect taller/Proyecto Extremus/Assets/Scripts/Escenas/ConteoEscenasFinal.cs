@@ -7,12 +7,14 @@ public class ConteoEscenasFinal : MonoBehaviour
 {
    
     static List <string> allScenes= new List<string> { "Volcánico", "Nuclear", "Marino" };
-    
+
+     
 
     private void Start()
     {
+       // Object.Dontdestroyonload(GameObject);
 
-        if(allScenes.Count > 0)
+        if (allScenes.Count > 0)
         {
             var scene=allScenes[allScenes.Count-1];
             SceneManager.LoadScene(scene);
