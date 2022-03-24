@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    public Animator transition;
+   /* public Animator transition;
     public float timetransition=2f;
 
     // Update is called once per frame
@@ -30,5 +30,5 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(timetransition);
 
         SceneManager.LoadScene(levelIndex);
-    }
+    }*/
 }

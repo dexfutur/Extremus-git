@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class ConteoEscenasFinal : MonoBehaviour
 {
    
-    static List <string> allScenes= new List<string> { "Volcánico", "Nuclear", "Marino" };
+    /*static List <string> allScenes= new List<string> { "Volcánico", "Nuclear", "Marino" };
 
      
 
-    private void Start()
+   private void Start()
     {
        // Object.Dontdestroyonload(GameObject);
 
@@ -24,5 +24,5 @@ public class ConteoEscenasFinal : MonoBehaviour
         {
             SceneManager.LoadScene("Despedida");
         }
-    }
+    }*/
 }

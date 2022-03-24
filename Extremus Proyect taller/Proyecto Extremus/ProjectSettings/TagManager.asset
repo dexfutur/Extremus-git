@@ -7,6 +7,7 @@ TagManager:
   - Narracion
   - player
   - a
+  - volcan
   layers:
   - Default
   - TransparentFX

@@ -19,6 +19,10 @@ public class GoToMain : MonoBehaviour
             backToIsles.SetActive(true);
             Debug.Log("se activó");
         }
+        if (this.tag=="volcan")
+        {
+            Debug.Log("alamadre");
+        }
 
     }
    
