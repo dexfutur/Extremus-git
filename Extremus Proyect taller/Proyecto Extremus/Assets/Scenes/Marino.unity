@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 45544465}
   m_Layer: 0
   m_Name: Salir Marino
-  m_TagString: Untagged
+  m_TagString: marino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

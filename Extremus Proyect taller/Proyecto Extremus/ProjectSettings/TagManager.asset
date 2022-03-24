@@ -8,6 +8,8 @@ TagManager:
   - player
   - a
   - volcan
+  - marino
+  - nuclear
   layers:
   - Default
   - TransparentFX

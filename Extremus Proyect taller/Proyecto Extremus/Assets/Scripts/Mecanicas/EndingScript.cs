@@ -13,7 +13,7 @@ public class EndingScript: MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         EndGame();
     }
@@ -23,5 +23,5 @@ public class EndingScript: MonoBehaviour
         {
             Debug.Log("TERMINSASTE!!!!");
         }
-    }
+    }*/
 }
