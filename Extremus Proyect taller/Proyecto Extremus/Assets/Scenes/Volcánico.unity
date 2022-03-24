@@ -3697,7 +3697,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backToIsles: {fileID: 1008696733}
   ending: {fileID: 0}
-  isOut: 0
+  isOutV: 0
+  isOutN: 0
+  isOutM: 0
   contador: 0
 --- !u!1 &1072824298
 GameObject:
@@ -4303,6 +4305,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 29.355001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254149097451065087, guid: 1445439ee9408564fa563b6b4645c2b1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254149097451065087, guid: 1445439ee9408564fa563b6b4645c2b1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254149097451065087, guid: 1445439ee9408564fa563b6b4645c2b1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 4257601179663819993, guid: 1445439ee9408564fa563b6b4645c2b1,
         type: 3}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class scriptBlobFish : MonoBehaviour
 {
     public Camera camera;
-    public ActiveNarrNuclear nar;
+    public ActiveNarrMarino nar;
     public AudioMarino audios;
     Animator animator;
   

@@ -13,14 +13,14 @@ public class MenuPausa : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (juegoPausado)
+            if (juegoPausado==false)
+            {
+                Pausa();
+            }
+            else if(juegoPausado==true)
             {
                 Reanudar();
             }
-                else
-                {
-                    Pausa();
-                }
             
         }
     }

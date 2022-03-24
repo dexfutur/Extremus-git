@@ -5,7 +5,7 @@ using UnityEngine;
 public class scriptCangrejo : MonoBehaviour
 {
     public Camera camera;
-    public ActiveNarrNuclear nar;
+    public ActiveNarrMarino nar;
     public AudioMarino audios;
     Animator animator;
 
@@ -39,7 +39,7 @@ public class scriptCangrejo : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hitInfo))
             {  
-                if (hitInfo.collider.gameObject.GetComponent<TargetA>() != null)
+                if (hitInfo.collider.gameObject.GetComponent<TargetP>() != null)
                 {
                     Debug.Log("el cangrejo camina");
                     animator.SetBool("semueve", true);
