@@ -15,7 +15,10 @@ public class MainMenu : MonoBehaviour
             Debug.Log("Quit");
             Application.Quit();
         }
+    public void LoadScene(string scenemane)
+    {
+        SceneManager.LoadScene(scenemane);
+    }
 
-    
 
 }
