@@ -19,12 +19,14 @@ public class idleAranya : MonoBehaviour
     public int speed;
     private int waypointIndex;
     private float dist;
+    public bool isPatrollin;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         waypointIndex = 0;
         transform.LookAt(waypoints[waypointIndex].position);
+        isPatrollin = false;
     }
     private void SpiderNarration()
     {
@@ -43,14 +45,19 @@ public class idleAranya : MonoBehaviour
             IncreaseIndex();
         }
         dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position);
+        //con bools
         Patrol();
 
     }
 
     void Patrol()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        Debug.Log("IT MOVES");
+        if(isPatrollin==true)
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            Debug.Log("IT MOVES");
+        }
+       
     }
     void DontPatrol()
     {
@@ -83,7 +90,7 @@ public class idleAranya : MonoBehaviour
                     animator.SetBool("semueve", true);
                   
                     SpiderNarration();
-                    DontPatrol();
+                    isPatrollin = true;
                    
 
 
