@@ -55,9 +55,9 @@ public class ConteoEscenasFinal : MonoBehaviour
         {
             Debug.Log("Gaara t amo");
         }*/
-        if(outScript.isOutV==true&&outScript.isOutN==true&&outScript.isOutM==true)
+       /* if(outScript.isOutV==true&&outScript.isOutN==true&&outScript.isOutM==true)
         {
             Debug.Log("CUEFJAOI");
-        }
+        }*/
     }
 }

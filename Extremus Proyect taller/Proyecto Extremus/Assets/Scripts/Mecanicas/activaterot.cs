@@ -6,6 +6,7 @@ public class activaterot : MonoBehaviour
 {
     [SerializeField] GameObject[] objects;
     public playerrotate playerrotate;
+    public PlayerRotateSmooth playsmooth;
     float timer;
     // Start is called before the first frame update
     void Start()
@@ -16,8 +17,9 @@ public class activaterot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+     
         timer += Time.deltaTime;
-        Debug.Log("T : " + timer);
+       // Debug.Log("T : " + timer);
         foreach (GameObject textos in objects)
         {
 
@@ -27,14 +29,16 @@ public class activaterot : MonoBehaviour
                 if (timer >=4)
                 {
                     textos.SetActive(false);
-
+                  
                 }
             }
         }
+
+
     }
     void OnTriggerEnter(Collider other)
     {
-        
+        timer = 0;
         if (other.tag == "player")
         {
             
@@ -50,11 +54,13 @@ public class activaterot : MonoBehaviour
             foreach (GameObject textos in objects)
             {
                 
-                if (textos.tag == "orbitar")
+                if (textos.CompareTag("orbitar"))
                 {
-                    timer = 0;
+                    
                     textos.SetActive(true);
-                   
+                    Debug.Log("active");
+                    playerrotate.speed = 200;
+                    playsmooth.speed = 200;
                 }
             }
         }

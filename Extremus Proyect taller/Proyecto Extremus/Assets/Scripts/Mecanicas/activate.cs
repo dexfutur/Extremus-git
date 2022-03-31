@@ -31,10 +31,7 @@ public class activate : MonoBehaviour
         // Debug.Log("tIMR :" + timer);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-       // ShowFirstText();
-    }
+   
     void ShowFirstText()
     {
         activations[0].SetActive(true);

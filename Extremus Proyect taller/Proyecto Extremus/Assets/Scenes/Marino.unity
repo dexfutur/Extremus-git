@@ -1450,6 +1450,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cangrejo_idle
       objectReference: {fileID: 0}
+    - target: {fileID: 1485425069073625978, guid: 53485ae14759adb47980717283e1c0fc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65221574796cc174bae0b838bd26538c, type: 2}
     - target: {fileID: 5866666021909216657, guid: 53485ae14759adb47980717283e1c0fc,
         type: 3}
       propertyPath: m_Controller
@@ -3925,7 +3930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 1703159238}
-  speed: 200
+  speed: 150
   rotation_limit: 90
   smoothTime: 0.2
   horiRotHelper: {fileID: 1706510325}
@@ -3954,7 +3959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 1703159238}
-  speed: 200
+  speed: 150
   rotation_limit: 90
 --- !u!114 &1384873268
 MonoBehaviour:
