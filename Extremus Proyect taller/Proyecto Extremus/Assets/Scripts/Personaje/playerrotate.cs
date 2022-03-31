@@ -7,7 +7,7 @@ public class playerrotate : MonoBehaviour
 {
     [Header("PlayerRotate Properties")]
     [SerializeField] private Transform cameraHolder;
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     [SerializeField] private float rotation_limit;
     protected float vertRot;
     public virtual void Rotate()

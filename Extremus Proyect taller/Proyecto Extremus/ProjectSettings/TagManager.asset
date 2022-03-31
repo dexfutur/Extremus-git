@@ -10,6 +10,7 @@ TagManager:
   - volcan
   - marino
   - nuclear
+  - orbitar
   layers:
   - Default
   - TransparentFX

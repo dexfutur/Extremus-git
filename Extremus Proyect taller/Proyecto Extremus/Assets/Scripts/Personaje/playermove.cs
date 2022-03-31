@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playermove : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] public float _speed;
     private CharacterController _player;
     private Vector3 _moveDir;
     public AudioSource pasos;
