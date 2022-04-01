@@ -3931,7 +3931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 1703159238}
   speed: 150
-  rotation_limit: 90
+  rotation_limit: 180
   smoothTime: 0.2
   horiRotHelper: {fileID: 1706510325}
 --- !u!114 &1384873266
@@ -3960,7 +3960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 1703159238}
   speed: 150
-  rotation_limit: 90
+  rotation_limit: 180
 --- !u!114 &1384873268
 MonoBehaviour:
   m_ObjectHideFlags: 0
