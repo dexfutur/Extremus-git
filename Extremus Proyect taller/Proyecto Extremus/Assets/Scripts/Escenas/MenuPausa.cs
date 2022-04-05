@@ -48,4 +48,8 @@ public class MenuPausa : MonoBehaviour
     {
         Application.Quit(); 
     }
+    public void LoadScene(string scenemane)
+    {
+        SceneManager.LoadScene(scenemane);
+    }
 }
