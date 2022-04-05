@@ -331,3 +331,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 5173812510065865475}
   timetransition: 1
+  myobject: {fileID: 5173812510564667657}
