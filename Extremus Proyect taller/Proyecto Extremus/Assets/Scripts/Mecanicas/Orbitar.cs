@@ -85,10 +85,10 @@ public class Orbitar : MonoBehaviour
 
     public static float ClampAngle(float angle, float min, float max)
     {
-        if (angle < -360F)
-            angle += 360F;
-        if (angle > 360F)
-            angle -= 360F;
+        if (angle < -90F)
+            angle += 90F;
+        if (angle > 90F)
+            angle -= 90F;
         return Mathf.Clamp(angle, min, max);
     }
 }
