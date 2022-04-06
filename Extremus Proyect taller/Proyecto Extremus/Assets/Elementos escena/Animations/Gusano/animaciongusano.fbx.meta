@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f0407a22beac71f42b7f27581a61e502
+guid: 2e3679850783dc24eb65aab550dfc17d
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 3374748389425109202
-    second: rig|rigAction
+      74: 1827226128182048838
+    second: Take 001
   externalObjects: {}
   materials:
     materialImportMode: 1

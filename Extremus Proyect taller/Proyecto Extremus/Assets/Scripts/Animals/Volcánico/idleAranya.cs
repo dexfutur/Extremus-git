@@ -92,8 +92,6 @@ public class idleAranya : MonoBehaviour
                     SpiderNarration();
                     isPatrollin = true;
                    
-
-
                 }
             }
         }

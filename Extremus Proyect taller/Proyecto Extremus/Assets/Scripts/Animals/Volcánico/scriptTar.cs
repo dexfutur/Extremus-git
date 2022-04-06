@@ -8,11 +8,19 @@ public class scriptTar : MonoBehaviour
     public ActiveNarra nar;
     public Audio1 audios;
     Animator animator;
- 
+    public Transform[] waypoints;
+    private int waypointIndex;
+    private float dist;
+    public int speed;
+    public bool isPatrollin;
+
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        waypointIndex = 0;
+        transform.LookAt(waypoints[waypointIndex].position);
+        isPatrollin = false;
     }
     private void TarNarr()
     {
@@ -26,6 +34,36 @@ public class scriptTar : MonoBehaviour
             Debug.Log("Paró narración");
             ClickAction();
         }
+        if (dist < 1f)
+        {
+            IncreaseIndex();
+        }
+        dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position);
+        //con bools
+        Patrol();
+    }
+    void IncreaseIndex()
+    {
+        waypointIndex++;
+        if (waypointIndex >= waypoints.Length)
+        {
+            waypointIndex = 0;
+        }
+        transform.LookAt(waypoints[waypointIndex].position);
+    }
+    void Patrol()
+    {
+        if (isPatrollin == true)
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            Debug.Log("IT MOVES");
+        }
+
+    }
+    void DontPatrol()
+    {
+        transform.Translate(Vector3.forward * 0 * Time.deltaTime);
+        Debug.Log("troste");
     }
 
     public void ClickAction()
@@ -41,6 +79,7 @@ public class scriptTar : MonoBehaviour
                     Debug.Log("Tar camina");
                     animator.SetBool("semueve", true);
                     TarNarr();
+                    isPatrollin = true;
                 }
             }
         }
