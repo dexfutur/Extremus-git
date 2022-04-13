@@ -13,6 +13,8 @@ public class scriptTar : MonoBehaviour
     private float dist;
     public int speed;
     public bool isPatrollin;
+    Vector3 tmp;
+
 
 
     void Start()
@@ -65,7 +67,14 @@ public class scriptTar : MonoBehaviour
         transform.Translate(Vector3.forward * 0 * Time.deltaTime);
         Debug.Log("troste");
     }
-
+    void IncreaseSize()
+    {
+        tmp = transform.localScale;
+        tmp.x += 7f;
+        tmp.y += 7f;
+        tmp.z += 7f;
+        transform.localScale = tmp;
+    }
     public void ClickAction()
     {
         if (Input.GetMouseButtonDown(0))
@@ -79,6 +88,7 @@ public class scriptTar : MonoBehaviour
                     Debug.Log("Tar camina");
                     animator.SetBool("semueve", true);
                     TarNarr();
+                    IncreaseSize();
                     isPatrollin = true;
                 }
             }

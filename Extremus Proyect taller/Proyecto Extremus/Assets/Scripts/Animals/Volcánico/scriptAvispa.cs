@@ -42,8 +42,6 @@ public class scriptAvispa : MonoBehaviour
         //con bools
         Patrol();
 
-
-
     }
     void IncreaseIndex()
     {
